@@ -10,4 +10,22 @@ footer{
         font-size: 50px;
         margin-right: 10px;
       }
-      
+#logo-nav{
+    width: 7em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#logo-ft{
+    width: 20em;
+    /* display: flex; */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0rem;
+}
+.navbar p{
+    margin-bottom: 0rem;
+    margin-right: 2rem;
+}
