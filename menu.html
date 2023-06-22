@@ -54,18 +54,19 @@
                         <div class="carousel-inner">
                           <div class="carousel-item active">
                             <center>
-                              <img src="img/giro3.jpg" class="d-block w-100" style="height: 350px;" alt="">
+                              <img src="img/giro3.jpg" class="d-block w-95" style="height: 350px;" alt="">
                             </center>
                           </div>
                           <div class="carousel-item">
                             <center>
-                              <img src="img/giro2.jpg" class="d-block w-100" style="height: 350px;" alt="">
+                              <img src="img/giro2.jpg" class="d-block w-95" style="height: 350px;" alt="">
                             </center>
                           </div>
                           <div class="carousel-item">
                             <center>
-                              <img src="img/giro4.jpg" class="d-block w-100" style="height: 350px;" alt="">
+                              <img src="img/giro4.jpg" class="d-block w-95" style="height: 350px;" alt="">
                             </center>
+                            <!-- trocar o W-95 para W-100 para ter as img do carrosel no tamanho maximo -->
                           </div>
                         </div>
                         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
@@ -79,33 +80,43 @@
                       </div>
                 </div>
             </div>
+
+            <style>
+              .custom-card-body {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                height: 100%;
+              }
+            </style>
+
             <div class="row">
-              <div class="col-3 g-5">
-                <div class="card">
+              <div class="col-lg-3 col-md-6 mb-3">
+                <div class="card h-100">
                   <img class="card-img-top img-fluid" src="img/gol.jpeg" alt="Title">
-                      <div class="card-body">
+                      <div class="card-body card-body custom-card-body">
                         <h4 class="card-title"></h4>
-                        <p class="card-text">Gols</p>
+                        <p class="card-text">Gols ( cada )</p>
                         <p> R$ 100,000</p>
                         <a href="#" class="btn btn-success" style="width: 100%;">Comprar</a>
                       </div>
                 </div>
               </div>
-              <div class="col-3 g-5">
-                <div class="card">
+              <div class="col-lg-3 col-md-6 mb-3">
+                <div class="card h-100">
                   <img class="card-img-top img-fluid" src="img/penalti.jpeg" alt="Title">
-                      <div class="card-body">
+                      <div class="card-body card-body custom-card-body">
                         <h4 class="card-title"></h4>
-                        <p class="card-text">Cobranca de Penaltis (cada)</p>
+                        <p class="card-text">Cobranca de Penaltis</p>
                         <p> R$ 200,000</p>
                         <a href="#" class="btn btn-success" style="width: 100%;">Comprar</a>
                       </div>
                 </div>
               </div>  
-              <div class="col-3 g-5">
-                <div class="card">
+              <div class="col-lg-3 col-md-6 mb-3">
+                <div class="card h-100">
                   <img class="card-img-top img-fluid" src="img/chuteGol.jpg" alt="Title">
-                      <div class="card-body">
+                      <div class="card-body card-body custom-card-body">
                         <h4 class="card-title"></h4>
                         <p class="card-text">Chutes ao Gol (cada)</p>
                         <p> R$ 100,000</p>
@@ -113,10 +124,10 @@
                       </div>
                 </div>
               </div> 
-              <div class="col-3 g-5">
-                <div class="card">
+              <div class="col-lg-3 col-md-6 mb-3">
+                <div class="card h-100">
                   <img class="card-img-top img-fluid" src="img/cartaoYellow.jpeg" alt="Title">
-                      <div class="card-body">
+                      <div class="card-body card-body custom-card-body">
                         <h4 class="card-title"></h4>
                         <p class="card-text">Cartao Amarelo</p>
                         <p> R$ 250,000</p>
@@ -126,21 +137,21 @@
               </div> 
             </div>
             <div class="row">
-              <div class="col-3 g-5">
-                <div class="card">
+              <div class="col-lg-3 col-md-6 mb-3">
+                <div class="card h-100">
                   <img class="card-img-top img-fluid" src="img/cartaoRed.jpeg" alt="Title">
-                      <div class="card-body">
+                      <div class="card-body card-body custom-card-body">
                         <h4 class="card-title"></h4>
-                        <p class="card-text">Cartao Vermlho</p>
+                        <p class="card-text"> Cartao Vermlho</p>
                         <p> R$ 400,000</p>
                         <a href="#" class="btn btn-success" style="width: 100%;">Comprar</a>
                       </div>
                 </div>
               </div>
-              <div class="col-3 g-5">
-                <div class="card">
+              <div class="col-lg-3 col-md-6 mb-3">
+                <div class="card h-100">
                   <img class="card-img-top img-fluid" src="img/chuteCanela.jpeg" alt="Title">
-                      <div class="card-body">
+                      <div class="card-body card-body custom-card-body">
                         <h4 class="card-title"></h4>
                         <p class="card-text">Quebrar um Joelho do Adersario</p>
                         <p> R$ 500,000</p>
@@ -148,21 +159,21 @@
                       </div>
                 </div>
               </div>  
-              <div class="col-3 g-5">
-                <div class="card">
+              <div class="col-lg-3 col-md-6 mb-3">
+                <div class="card h-100">
                   <img class="card-img-top img-fluid" src="img/chuteVar.jpeg" alt="Title">
-                      <div class="card-body">
+                      <div class="card-body card-body custom-card-body">
                         <h4 class="card-title"></h4>
-                        <p class="card-text">Chutar o Var</p>
+                        <p class="card-text">Chutar o Var: ( cada chute )</p>
                         <p> R$ 1,000,000</p>
                         <a href="#" class="btn btn-success" style="width: 100%;">Comprar</a>
                       </div>
                 </div>
               </div> 
-              <div class="col-3 g-5">
-                <div class="card">
+              <div class="col-lg-3 col-md-6 mb-3">
+                <div class="card h-100">
                   <img class="card-img-top img-fluid" src="img/trofeu.jpeg" alt="Title">
-                      <div class="card-body">
+                      <div class="card-body card-body custom-card-body">
                         <h4 class="card-title"></h4>
                         <p class="card-text">Apelar e chamar o Jawad para ganhar o jogo</p>
                         <p> R$ ∞</p>
