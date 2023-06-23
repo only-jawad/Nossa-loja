@@ -1,0 +1,11 @@
+#logo-nav{
+    width: 7em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.navbar p{
+    margin-bottom: 0rem;
+    margin-right: 2rem;
+}

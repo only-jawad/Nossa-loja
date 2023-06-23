@@ -7,23 +7,37 @@
 
     $sub = isset($_POST["submetido"]) ? $_POST["submetido"] : null;
     if ($sub) {
-        $email = isset($_POST["email"]) ? trim($_POST["email"]) : null;     
-        $senha = isset($_POST["senha"]) ? trim($_POST["senha"]) : null;
-        if (!$email) {
-            $msgErro = "Informe o E-mail!";
-        }
-        if (!$senha) {
-            $msgErro = $msgErro."<br> Informe a senha!";
-        }
-        else {
-            if ($senha=="adm") {
-                header("Location: menu.html");
-                exit;
-            } else {
-               $msgErro = "E-mail ou senha incorretos";
-            }
-        }     
-    }
+      $email = isset($_POST["email"]) ? trim($_POST["email"]) : null;     
+      $senha = isset($_POST["senha"]) ? trim($_POST["senha"]) : null;
+  
+      if (!$email) {
+          $msgErro = '<div class="alert alert-danger d-flex align-items-center" role="alert">
+              <div>
+                  Informe o E-mail!
+              </div>
+          </div>';
+      }
+    
+      if (!$senha) {
+          $msgErro .= '<div class="alert alert-danger d-flex align-items-center" role="alert">
+              <div>
+                  Informe a senha!
+              </div>
+          </div>';
+      }
+      else {
+          if ($senha == "adm") {
+              header("Location: menu.html");
+              exit;
+          } else {
+              $msgErro = '<div class="alert alert-danger d-flex align-items-center" role="alert">
+                  <div>
+                      E-mail ou senha incorretos
+                  </div>
+              </div>';
+          }
+      }     
+  }
 ?>
 
 <!DOCTYPE html>
@@ -62,7 +76,7 @@
                 <label class="form-label" for="typePasswordX">Senha</label>
               </div>
             <div class="g-5" id="msg" style="color : red;">
-                <?= $msgErro ?>
+              <?= $msgErro ?>
             </div>
               <p class="small mb-5 pb-lg-2"><a class="text-white-50" href="#!">Esqueceu a senha?</a></p>
 
@@ -76,7 +90,6 @@
               </div>
 
             </div>
-
             <div>
               <p class="mb-0">Ainda não tem uma conta? <a href="#!" class="text-white-50 fw-bold">Cadastre-se</a>
               </p>

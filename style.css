@@ -29,3 +29,10 @@ footer{
     margin-bottom: 0rem;
     margin-right: 2rem;
 }
+.custom-card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+            
