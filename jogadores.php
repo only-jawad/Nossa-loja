@@ -58,7 +58,10 @@
             $stmt->execute(); 
             $result = $stmt->fetchAll(); 
         ?>
-        <center><h1>Nossos Jogadores</h1></center>
+        <br>
+        <h1 class="main-title-h d-flex">Esses sao os nossos Jogadores</h1>
+        <h1 class="main-title-h d-flex">Qual deles voce quer que faca o serviço?</h1>
+        <br>
         <div class="container">
             <div class="row">
                 <?php $count = 0; ?>
