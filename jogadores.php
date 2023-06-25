@@ -58,7 +58,7 @@
             $stmt->execute(); 
             $result = $stmt->fetchAll(); 
         ?>
-        <h1>Nossos Jogadores</h1>
+        <center><h1>Nossos Jogadores</h1></center>
         <div class="container">
             <div class="row">
                 <?php $count = 0; ?>
@@ -79,6 +79,7 @@
                     <?php $count++; ?>
                 <?php endforeach; ?>
             </div>
+            <br>
             <div class="pergutas g-5">
                 <div class="row">
                     <div class="col">
@@ -92,31 +93,31 @@
                             </h2>
                             <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
                             <div class="accordion-body">
-                                <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                            </div>
+                            Aqui é um site de apostas 100% segura!! temos algumas variedades de opções e jogadores para voce escolher                         </div>
                             </div>
                         </div>
                         <div class="accordion-item">
                             <h2 class="accordion-header">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                Accordion Item #2
+                                Como comprar?
                             </button>
                             </h2>
                             <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                             <div class="accordion-body">
-                                <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                1- Va em menu e escolha alguma das opcoes disponiveis, apos escolher aperte em "comprar", voce sera redirecionado para outra pagina. <br>
+                                2- Na pagina em que voce foi redirecionado, voce vai poder escolher qual dos nossos jogadores vai fazer a aposta ser comprida, escolheu? aperte em "contratar jogador".
                             </div>
                             </div>
                         </div>
                         <div class="accordion-item">
                             <h2 class="accordion-header">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                Accordion Item #3
+                                A pagina é segura?
                             </button>
                             </h2>
                             <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                             <div class="accordion-body">
-                                <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                Claro que sim! os jogadores que estao aqui dentro nao podem explarar nada para os seus colegas, pois isso nao so afetaria o bolso dele, mas sim o cargo e etc
                             </div>
                             </div>
                         </div>
@@ -126,6 +127,7 @@
             </div>
         </div>
     </main>
+    <br>
     <footer class="g-5 bg-dark">
       <div class="container">
         <div class="row">
