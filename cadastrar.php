@@ -42,7 +42,7 @@
             $stmt = $conn->prepare($sql);
             $stmt->execute([$nome, $nomeTime, $sexo, $idade, $funcao, $link_img]);
     
-            header("location: cadastar.php");
+            header("location: cadastrar.php");
         }  
     }
 
@@ -86,8 +86,8 @@
                     </ul>
                     <div><p class="">Olá, bem vindo <b>Admin</b>!</p></div>
                     <form class="d-flex my-2 my-lg-0">
-                        <input class="form-control me-sm-2" type="text" placeholder="Pesquisar">
-                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Pesquisar</button>
+                        <input class="barradepesquisa" type="text" placeholder="Pesquisar">
+                        <button class="btn-navbar" type="submit">Pesquisar</button>
                     </form>
                 </div>
           </div>
@@ -118,40 +118,44 @@
             $stmt->execute(); 
             $result = $stmt->fetchAll(); 
         ?>
-        <table border="1">
-            <tr>
-                <td>ID</td>
-                <td>Nome</td>
-                <td>Time</td>
-                <td>Função</td>
-                <td>Sexo</td>
-                <td>Idade</td>
-                <td>Link IMG</td>
-                <td></td>
-            </tr>
-            <?php foreach ($result as $reg): ?>
+        <table class="table table-striped">
+            <thead>
                 <tr>
-                    <td><?php echo $reg['id']?></td>
-                    <td><?php echo $reg['nome']?></td>
-                    <td><?php echo $reg['nomeTime']?></td>
-                    <td><?php echo $reg['funcao']?></td>
-                    <td><?php
-                            switch ($reg['sexo'] ) {
-                                case 'M':
-                                    echo "Masculino";
-                                    break;
-                                case 'F':
-                                    echo "Feminino";
-                                    break;
-                            }
-                    
-                        ?>
-                    </td>
-                    <td><?= $reg['idade'] ?></td>
-                    <td><?= $reg['link_img'] ?></td>
-                    <td><a href="jogadores_del.php?id=<?= $reg['id'] ?>" onclick=" return confirm('Confirma a exclusão?')">
-                    Exluir</a></td>
+                    <td scope="col">ID</td>
+                    <td scope="col">Nome</td>
+                    <td scope="col">Time</td>
+                    <td scope="col">Função</td>
+                    <td scope="col">Sexo</td>
+                    <td scope="col">Idade</td>
+                    <td scope="col">Link IMG</td>
+                    <td scope="col"></td>
                 </tr>
+            </thead>
+            <?php foreach ($result as $reg): ?>
+                <tbody>
+                    <tr>
+                        <td scope="row"><?php echo $reg['id']?></td>
+                        <td><?php echo $reg['nome']?></td>
+                        <td><?php echo $reg['nomeTime']?></td>
+                        <td><?php echo $reg['funcao']?></td>
+                        <td><?php
+                                switch ($reg['sexo'] ) {
+                                    case 'M':
+                                        echo "Masculino";
+                                        break;
+                                    case 'F':
+                                        echo "Feminino";
+                                        break;
+                                }
+                        
+                            ?>
+                        </td>
+                        <td><?= $reg['idade'] ?></td>
+                        <td><?= $reg['link_img'] ?></td>
+                        <td><a href="jogadores_del.php?id=<?= $reg['id'] ?>" onclick=" return confirm('Confirma a exclusão?')">
+                        Exluir</a></td>
+                    </tr>
+                </tbody>
             <?php endforeach; ?>
         </table>
     </main>

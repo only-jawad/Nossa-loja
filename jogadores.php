@@ -45,8 +45,8 @@
                     </ul>
                     <div><p class="">Olá, bem vindo <b>Admin</b>!</p></div>
                     <form class="d-flex my-2 my-lg-0">
-                        <input class="form-control me-sm-2" type="text" placeholder="Pesquisar">
-                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Pesquisar</button>
+                        <input class="barradepesquisa" type="text" placeholder="Pesquisar">
+                        <button class="btn-navbar" type="submit">Pesquisar</button>
                     </form>
                 </div>
           </div>
