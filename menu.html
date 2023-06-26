@@ -22,7 +22,7 @@
                 <div class="collapse navbar-collapse" id="collapsibleNavId">
                     <ul class="navbar-nav me-auto mt-2 mt-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" href="menu.html" aria-current="page">Home <span class="visually-hidden">(current)</span></a>
+                            <a class="nav-link" href="menu.html" aria-current="page">Home <span class="visually-hidden">(current)</span></a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Mais</a>
@@ -33,7 +33,7 @@
                             </div>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link" href="cadastar.php">Cadastrar</a>
+                          <a class="nav-link" href="cadastrar.php">Cadastrar</a>
                         </li>
                     </ul>
                     <div><p class="">Olá, bem vindo <b>Admin</b>!</p></div>
@@ -48,7 +48,6 @@
     </header>
     <main>
 
-      
    <!--Slide fotos-->   
    <div class="container-fluid">
     <div id="mainSlider" class="carousel slide" data-bs-ride="carousel">                    
@@ -70,7 +69,7 @@
           <div class="carousel-caption d-none d-md-block">
             <h2>Ta quebrado?</h2>
             <p>Aposte no placar do jogo</p>
-            <a href="#" class="main-btn">Apostar</a>
+            <a href="#destino" class="main-btn">Apostar</a>
           </div>
         </div>              
         
@@ -79,7 +78,7 @@
           <div class="carousel-caption d-none d-md-block">
             <h2>Esta precisando de dinheiro?</h2>
             <p>Aposte em nossos jogadores!</p>
-            <a href="#" class="main-btn">Apostar</a>
+            <a href="#destino" class="main-btn">Apostar</a>
           </div>
         </div>              
         
@@ -88,7 +87,7 @@
           <div class="carousel-caption d-none d-md-block">
             <h2>Quer uma renda extra?</h2>
             <p>Aposte em uma jogada</p>
-            <a href="#" class="main-btn">Apostar</a>
+            <a href="#destino" class="main-btn">Apostar</a>
           </div>
         </div>
       
@@ -108,6 +107,22 @@
   </div>
 
   <br><br>
+  <div class="d-sm-none container">
+    <div class="row">
+      <div class="col">
+        <h2 class="main-title-h d-flex">Acesse o nosso site por um computador para ter uma melhor experência!</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <img src="img/gif.gif" alt="" id="gif" srcset="" class="d-flex">
+      </div>
+    </div>
+    <br><br>
+  </div>
+  <br><br>
+  
+  
 
               <!-- Sobre o LUCRO CERTO-->
     <div id="about-area" class="d-flex">
@@ -117,7 +132,7 @@
 
           <div class="">
 
-            <h3 class="main-title-h d-flex"> Sobre o LUCRO CERTO </h3>
+            <h3 class="main-title-h d- d-flex"> Sobre o LUCRO CERTO </h3>
 
           </div>
 
@@ -155,7 +170,7 @@
       </div>
 
     </div> 
-            <div class="row p-5">
+            <div class="row p-5" id="destino">
               <div class="col-lg-3 col-md-6 mb-3">
                 <div class="card h-100">
                   <img class="card-img-top img-fluid" src="img/gol.jpeg" alt="Title">
@@ -270,6 +285,7 @@
       </div>
     
     </footer>
+    <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

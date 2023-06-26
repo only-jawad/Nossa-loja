@@ -12,6 +12,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Lucro Certo</title>
@@ -28,7 +29,7 @@
                 <div class="collapse navbar-collapse" id="collapsibleNavId">
                     <ul class="navbar-nav me-auto mt-2 mt-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" href="menu.html" aria-current="page">Home</a>
+                            <a class="nav-link" href="menu.html" aria-current="page">Home</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Mais</a>
@@ -39,7 +40,7 @@
                             </div>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link" href="cadastar.php">Cadastrar</a>
+                          <a class="nav-link" href="cadastrar.php">Cadastrar</a>
                         </li>
                     </ul>
                     <div><p class="">Olá, bem vindo <b>Admin</b>!</p></div>
@@ -59,8 +60,8 @@
             $result = $stmt->fetchAll(); 
         ?>
         <br>
-        <h1 class="main-title-h d-flex">Esses sao os nossos Jogadores</h1>
-        <h1 class="main-title-h d-flex">Qual deles voce quer que faca o serviço?</h1>
+        <h1 class="main-title-h d-flex">Esses são os nossos Jogadores</h1>
+        <!-- <h1 class="main-title-h d-flex">Qual deles voce quer que faca o serviço?</h1> -->
         <br>
         <div class="container">
             <div class="row">
@@ -75,7 +76,7 @@
                             <div class="card-body">
                                 <h5 class="card-title"><?= $reg['nome'] ?></h5>
                                 <p class="card-text">Jogador <?= $reg['nome'] ?>, <?= $reg['idade'] ?> anos, do time <?= $reg['nomeTime'] ?> na posição <?= $reg['funcao'] ?></p>
-                                <a href="#" class="btn btn-primary">Contatar Jogador</a>
+                                <a href="#" class="btn btn-primary">Contratar Jogador</a>
                             </div>
                         </div>
                     </div>
@@ -86,7 +87,7 @@
             <div class="pergutas g-5">
                 <div class="row">
                     <div class="col">
-                        <h2>Perguntas frquentes</h2>
+                        <h2>Perguntas frequentes</h2>
                         <div class="accordion" id="accordionExample">
                         <div class="accordion-item">
                             <h2 class="accordion-header">
@@ -96,7 +97,7 @@
                             </h2>
                             <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
                             <div class="accordion-body">
-                            Aqui é um site de apostas 100% segura!! temos algumas variedades de opções e jogadores para voce escolher                         </div>
+                            Aqui é um site de apostas 100% segura!! temos algumas variedades de opções e jogadores para você escolher                         </div>
                             </div>
                         </div>
                         <div class="accordion-item">
@@ -107,8 +108,8 @@
                             </h2>
                             <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                             <div class="accordion-body">
-                                1- Va em menu e escolha alguma das opcoes disponiveis, apos escolher aperte em "comprar", voce sera redirecionado para outra pagina. <br>
-                                2- Na pagina em que voce foi redirecionado, voce vai poder escolher qual dos nossos jogadores vai fazer a aposta ser comprida, escolheu? aperte em "contratar jogador".
+                                1- Vá em menu e escolha alguma das opções disponíveis, após escolher aperte em "comprar", você será redirecionado para outra página. <br>
+                                2- Na página em que você foi redirecionado, você vai poder escolher qual dos nossos jogadores vai fazer o serviço a ser cumprido, escolheu? aperte em "contratar jogador".
                             </div>
                             </div>
                         </div>
@@ -120,7 +121,7 @@
                             </h2>
                             <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                             <div class="accordion-body">
-                                Claro que sim! os jogadores que estao aqui dentro nao podem explarar nada para os seus colegas, pois isso nao so afetaria o bolso dele, mas sim o cargo e etc
+                                Claro que sim! os jogadores que estão aqui dentro não podem explanar nada para os seus colegas, pois isso não só afetaria o bolso dele, mas sim o cargo e dentre outras coisas
                             </div>
                             </div>
                         </div>
