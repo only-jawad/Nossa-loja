@@ -85,8 +85,8 @@
                         </li>
                     </ul>
                     <div><p class="">Olá, bem vindo <b>Admin</b>!</p></div>
-                    <form class="d-flex my-2 my-lg-0">
-                        <input class="barradepesquisa" type="text" placeholder="Pesquisar">
+                    <form class="d-flex my-2 my-lg-0" action="#" method="get">
+                        <input class="barradepesquisa" type="text" name="buscar" placeholder="Pesquisar">
                         <button class="btn-navbar" type="submit">Pesquisar</button>
                     </form>
                 </div>
@@ -113,7 +113,13 @@
         </form>
         <h3>Listagem de Jogadores</h3>
         <?php 
-            $sql = "SELECT * FROM jogadores";
+            if (isset($_GET["buscar"])) {
+                $sql = "SELECT * FROM jogadores WHERE nome like '%".$_GET["buscar"]."%'";
+            }
+            else {
+                $sql = "SELECT * FROM jogadores";    
+            }
+            // $sql = "SELECT * FROM jogadores";
             $stmt = $conn->prepare($sql);
             $stmt->execute(); 
             $result = $stmt->fetchAll(); 
